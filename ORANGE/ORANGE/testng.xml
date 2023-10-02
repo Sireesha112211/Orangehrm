@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+  <test name="Login">
+    <classes>
+      <class name="orangehrm.Login">
+      	<methods>
+      		<include name="loginWithValidCredentials"></include>
+      		<include name="LoginWithInvalidCredentials"></include>
+      		<include name="loginWithEmptyFields"></include>
+      	</methods>
+      </class>
+    </classes>
+  </test> <!-- Test -->
+  <test name="Reports">
+    <classes>
+      <class name="orangehrm.Reports">
+      	<methods>
+      		<include name="AddReport"></include>
+      		<include name="displayReportDetails"></include>
+      		<include name="UpdateReport"></include>
+      		<include name="deleteReport"></include>
+      	</methods>
+      </class>
+    </classes>
+  </test> <!-- Test -->
+  <test name="Logout">
+    <classes>
+      <class name="orangehrm.Logout">
+      	<methods>
+      		<include name="logOut"></include>
+      	</methods>
+      </class>
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->

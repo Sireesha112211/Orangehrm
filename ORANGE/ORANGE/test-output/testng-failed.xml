@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" name="Login(failed)">
+    <classes>
+      <class name="orangehrm.Login">
+        <methods>
+          <include name="tearDown"/>
+          <include name="setUp"/>
+          <include name="loginWithValidCredentials"/>
+          <include name="LoginWithInvalidCredentials"/>
+          <include name="loginWithEmptyFields"/>
+        </methods>
+      </class> <!-- orangehrm.Login -->
+    </classes>
+  </test> <!-- Login(failed) -->
+  <test thread-count="5" name="Reports(failed)">
+    <classes>
+      <class name="orangehrm.Reports">
+        <methods>
+          <include name="displayReportDetails"/>
+          <include name="loginWithValidCredentials"/>
+          <include name="AddReport"/>
+          <include name="deleteReport"/>
+          <include name="setUp"/>
+          <include name="UpdateReport"/>
+          <include name="logOut"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- orangehrm.Reports -->
+    </classes>
+  </test> <!-- Reports(failed) -->
+  <test thread-count="5" name="Logout(failed)">
+    <classes>
+      <class name="orangehrm.Logout">
+        <methods>
+          <include name="setUp"/>
+          <include name="tearDown"/>
+          <include name="logOut"/>
+          <include name="loginWithValidCredentials"/>
+        </methods>
+      </class> <!-- orangehrm.Logout -->
+    </classes>
+  </test> <!-- Logout(failed) -->
+</suite> <!-- Failed suite [Suite] -->
